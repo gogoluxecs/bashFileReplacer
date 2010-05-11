@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for i in *.php
+do
+cat $i | sed -e 's/benefit/rental/g' > r/$i
+done
